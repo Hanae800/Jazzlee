@@ -1,4 +1,4 @@
-print random
+
 #%%
 import random
 #%%
@@ -18,6 +18,6 @@ verbs = ["sing" , "shower" , "pray"]
 print("samia" + random.choice(verbs)+ "after lunch")
 
 #%%
-print (“difficult”) + random.choice(nouns) + "lovely"
+print ("difficult") + random.choice(nouns) + "lovely"
 
 #%%
