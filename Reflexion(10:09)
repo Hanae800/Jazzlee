@@ -1,0 +1,31 @@
+#%%
+a = "wyatt"
+for i in range(len(wyatt)):
+    print(i, wyatt[i])
+    
+
+
+#%%
+wyatt = "They flee from me that sometime did me seek / With naked foot, stalking in my chamber."
+for i in range(len(wyatt)): 
+    print(wyatt[i])
+
+
+#%%
+wyatt = "They flee from me that sometime did me seek / With naked foot, stalking in my chamber."
+for i in range(len(wyatt)): 
+    print(i, wyatt[i])
+
+#%%
+wyatt = "They flee from me that sometime did me seek / With naked foot, stalking in my chamber."
+for i in range(len(wyatt)): 
+    print ("wyatt[i:i+2]")
+
+#%%
+wyatt = "They flee from me that sometime did me seek / With naked foot, stalking in my chamber."
+pairs = 0
+for i in range(len(wyatt)):
+   if wyatt[i:i+2] == "ee": 
+    pairs = pairs + 1
+
+#%%
