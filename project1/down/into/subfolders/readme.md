@@ -21,4 +21,17 @@ AudioSample s8;
 AudioSample s9;
 AudioSample s10;
 
-But mostly tutorials have helped me to find a solution to every probelm i have found.  
+I figured there is a way of changing the randomness by changing the constant values to multiples values within (1-10) rather than keeping the value constant at all times. So by changing numbers everytime the randomness would be random rather than constant (Although it's not make a difference in the outcome because it would still generate random sounds, in a random way every time it plays which is the point of the code).  
+
+soundengine = new Minim (this); 
+  int fileName_1 = (int)(Math.random() * (9 - 1) + 1); 
+  int fileName_2 = (int)(Math.random() * (10 - 1) + 1); 
+  int fileName_3 = (int)(Math.random() * (9 - 1) + 1); 
+  int fileName_4 = (int)(Math.random() * (7 - 1) + 1); 
+  int fileName_5 = (int)(Math.random() * (8- 1) + 1); 
+  int fileName_6 = (int)(Math.random() * (4- 1) + 1); 
+  int fileName_7 = (int)(Math.random() * (2 - 1) + 1); 
+  int fileName_8 = (int)(Math.random() * (7- 1) + 1); 
+  int fileName_9 = (int)(Math.random() * (8 - 1) + 1); 
+  int fileName_10 = (int)(Math.random()* (1-0 - 1) + 1); 
+
