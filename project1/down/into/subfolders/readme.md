@@ -34,4 +34,9 @@ soundengine = new Minim (this);
   int fileName_8 = (int)(Math.random() * (7- 1) + 1); 
   int fileName_9 = (int)(Math.random() * (8 - 1) + 1); 
   int fileName_10 = (int)(Math.random()* (1-0 - 1) + 1); 
+  
+  This was a good experiment for me, i am looking forward to see how can i integrated randomness to other aspects to my digital media projects 
+  
+  
+  Youtube tutorial link : https://www.youtube.com/watch?v=j16UGIrZotA&list=PL632BB8C3F7E776BA&index=100
 
