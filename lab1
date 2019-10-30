@@ -52,7 +52,7 @@
 #%%
 # string
 print ("Hello Program my name is Hanae and I am 23 YO.")
-# int
+# 
 print(7)
 # float
 print ("1.000001")
@@ -78,7 +78,7 @@ a = 5
 # If you enter a variable without first defining it, you will receive a NameError:
 
 #%% 
-b
+b = -5
 
 #%% [markdown]
 # *ON YOUR OWN:* Assign an integer to the variable `b` above so that no error
@@ -110,13 +110,13 @@ print(a)
 
 #%%
 a = "Hello World."
-print("Hello World.")
+print(a)
 
 a = 42.0
-print("42.0.")
+print(a)
 
 a = "True" 
-print ("True.")
+print (a)
 
 
 #%% [markdown]
@@ -192,9 +192,9 @@ print(3+return_four())
 #%%
 # WRITE YOUR CODE HERE
 #%%
-def exclaim(x,y):
-    return x+y
-exclaim("hello world","!")
+def exclaim!()
+    return(!)
+print(exclaim!()+ "hello world")
 #%% [markdown]
 # ## Parameters and Arguments
 # A *parameter* is the local variable that is associated with a function. The
@@ -271,15 +271,18 @@ compare_with_3(4)
 #%% 
 # WRITE YOUR CODE HERE
 #%%
-def compare(numx , numy)
-    if numx == numy :
-        print (str(numx)) +"is equal to" + str(numy))
-    elif numx > numy :
-        print (str(numx) + "is greater than" + str(numy))
-    else:
-        print (str(numx) + "is less than" + str (numy))
+numx=1
+numy=2
+ def compare(numx , numy)
+  if numx == numy:
+    print(str(numx)) + "is equal to" + str(numy))
+  elif numx > numy :
+    print (str(numx) + "is greater than" + str(numy))
+  else:
+    print (str(numx) + "is less than" + str (numy))
 
 compare (4,5)
+
 
 
 #%% [markdown]
