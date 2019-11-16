@@ -1,0 +1,90 @@
+
+#%%
+ import re
+
+# (xoeu)*
+#%%
+txt = "aaaaa"
+x = re.search( "a" , txt)
+print(x)
+# x*
+#%%
+# US Zip code (either 5 or 5+4)
+zipcode1 = "31245"
+zipcode2 = "32124-2432"
+zipcode3 = "3214"
+zipcode4 = "oue23"
+
+x = re.search("\d{5}?\d{5}-\d{4}", zipcode2)
+x = re.search("\d{5} "+" -\d{4}", zipcode2)
+print(x)
+#%%
+zipcode1 = "44242555"
+print(re.search("^\d{5}$" , zipcode1))
+#%%
+zipcode1 = "44245-2555"
+print(re.search("^\d{5}|\d{5}-\d{4}$" , zipcode1)
+#%%
+zipcode1 = "44245-2555"
+regexpression = "^\d{5}$|^\d{5}-\d{4}$"
+print(re.search(regexpression, zipcode1))
+
+#%%
+zipcode1 = "44245-2555"
+regexpression = "^\d{5}(-\d{4})?$"
+print(re.search(regexpression, zipcode1))
+print(re.search(regexpression, zipcode2))
+
+#%%
+time0 = "5pm"
+time1 = "6am"
+time2 = "2:00p"
+time3 = "13:00a"
+time4 = "00:02pm"
+
+regexpression = "^([1-9]|1[0-2])(:\d\d)?[ap]m?$"
+print(re.search(regexpression, time0))
+print(re.search(regexpression, time1))
+print(re.search(regexpression, time2))
+print(re.search(regexpression, time3))
+print(re.search(regexpression, time4))
+#%%
+class MyClass1:
+    """A simple example class"""
+    i = 12345
+    def __init__(self, name):
+        self.name = name
+    def f(self):
+        return 'hello world'
+#%%
+aClass = MyClass1()
+print(aClass.f())
+bClass = MyClass2()
+print(bClass.f())
+#%%
+class MyClass2:
+    """A simple example class 2"""
+    i = 12345
+    def f(self):
+        return 'hello world from ' + self.name
+
+#%%
+aClass = MyClass2("John")
+print(aClass.f())
+bClass = MyClass2("Lucy")
+print(bClass.f())
+#%%
+from PIL import Image
+#%%
+mode = 'RGBA'
+size = (100,100)
+color = 'black'
+ourimage = Image.new(mode, size, color)
+ourimage
+#%%
+for x in range(ourimage.size[0]):
+    for x in range(ourimage.size[1]):
+        value = float(x)/ourimage.size[0]
+        value = int(value*255.0)
+        ourimage.putpixel((x,y),(x,x,x,255))
+#%%
