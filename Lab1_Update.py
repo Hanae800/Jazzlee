@@ -387,12 +387,7 @@ print(random.randint(2,100))
 #%%
 import random
 def sum_random(x):
-    sum=0
-    for n in range(1,x+1):
-        sum=sum+random.randint(1,100)
+    sum = 0
+    for n in range(x):
+        sum = sum + random.randint(x)
     return sum
- 
-
-
-
-#%%
